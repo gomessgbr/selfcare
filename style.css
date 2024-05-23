@@ -47,3 +47,126 @@ main .headerProducts{
     line-height: 21.6px;
   }
 }
+
+main .cardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 50px 0 110px 0;
+  row-gap: 50px;
+}
+
+main .cardGrid .card{
+  max-width: 303px;
+  display: grid;
+  gap: 10px;
+  max-height: fit-content;
+
+  & > p,span {
+    font-family: "Lato", sans-serif;
+  }
+
+  & > p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #161616;
+    line-height: 26.4px;
+  }
+
+  & > span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #161616;
+
+    & > span {
+      color: #5CA720;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+
+  
+
+  & > img {
+    object-fit: cover;
+    height: 303px;
+    width: 303px;
+  }
+}
+
+footer{
+  background-color: #F9F9F9;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+footer .footerNewsletterArea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+ 
+
+  & > ul li {
+    list-style-type: none;
+    padding: 4px 0;
+  }
+}
+
+footer .footerNewsletterArea form{
+  display: flex;
+
+
+  & > button{
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #5CA720;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+footer .footerNewsletterArea form label {
+  display : flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 400px;
+
+  & > input {
+    padding: 16px 16px;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 5px 0px 0px 5px;
+
+  }
+  & > input::placeholder{
+    color: #A8A4A4;
+  }
+}
+
+@media (max-width: 600px) {
+  main .cardGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main .cardGrid .card{
+    display: grid;
+    gap: 10px;
+    padding: 50px 0 0 0;
+  
+    & > img {
+      object-fit: cover;
+     height: 126.44px;
+     width: 126.44px;
+    }
+  }
+}
