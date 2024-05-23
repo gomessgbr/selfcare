@@ -7,3 +7,43 @@
 body{
   font-family: "Lato", sans-serif;
 }
+
+header  nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 54px;
+
+  & > .iconsNavArea{
+    display: flex;
+    gap: 20px;
+  }
+}
+
+header > img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+main .headerProducts{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 0.5px solid #A5A1A1;
+
+  & > p {
+    font-family: "Lato", sans-serif;
+  }
+
+  & > p:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  & > p:last-child{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
